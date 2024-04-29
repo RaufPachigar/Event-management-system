@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
         char first_name,last_name;
-		int no_guest,no_min;
-		const double CostPerHour = 18.50;
+	int no_guest,no_min;
+	const double CostPerHour = 18.50;
         const double CostPerMinute =0.40;
         const double CostOfDinner = 20.70;
         int server;
