@@ -3,8 +3,8 @@
 
 using namespace std;
         char first_name[20],last_name[20];
-		int no_guest,no_min;
-		const double CostPerHour = 18.50;
+	int no_guest,no_min;
+	const double CostPerHour = 18.50;
         const double CostPerMinute =0.40;
         const double CostOfDinner = 20.70;
         int no_of_server;
@@ -44,13 +44,14 @@ class customer_Details{
 		
 		void server()
 		{
-            no_of_server=no_guest/20;
-            cout<<"Number of Servers :"<<ceil(no_of_server)<<endl;
             
-            Cost1 = (no_min / 60) * CostPerHour;
-            Cost2 = (no_min % 60) * CostPerMinute;
-            CostForOneServer = Cost1 + Cost2;
-            cout<<"Cost of servers : "<<CostForOneServer*no_of_server<<endl;
+			no_of_server=no_guest/20;
+                       cout<<"Number of Servers :"<<ceil(no_of_server)<<endl;
+            
+            		Cost1 = (no_min / 60) * CostPerHour;
+            		Cost2 = (no_min % 60) * CostPerMinute;
+            		CostForOneServer = Cost1 + Cost2;
+            		cout<<"Cost of servers : "<<CostForOneServer*no_of_server<<endl;
             
       
 		}
@@ -62,13 +63,13 @@ class customer_Details{
 			cout<<"Average cost per person :"<<AverageCost<<endl;
 			}	
 			
-			void Total_Cost()
+		void Total_Cost()
 			{
 				TotalCost = TotalFoodCost + (CostForOneServer * no_of_server);
 				cout<<"Total cost is :"<<TotalCost<<endl;
 			}
 			
-			void deposit()
+		void deposit()
 			{
 				DepositAmount = TotalCost * 0.25;
 				cout<<"Please diposit 25% deposit to reserve the event "<<endl;
